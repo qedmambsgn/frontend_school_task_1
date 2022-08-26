@@ -136,7 +136,6 @@ a, h2, h1, p{
 .thumbnail{
     font-weight: bold;
 }
-
 .middle-position-in-block{
     display: flex;
     flex-direction: column;
