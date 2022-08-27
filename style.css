@@ -2,20 +2,22 @@ html body{
     height: 100%;
     width: 100vw;
     margin: 0;
-
+    overflow-x: hidden;
 }
 
-a, h2, h1, p{
+a, h2, h1, p, h3{
     text-decoration: none;
     font-family: 'Larsseit';
 }
 
+
 .thrivetalk{
-    height: 840px;
+    height: 100%;
     width: 100%;
     background: #F4F9E2;
     display: flex;
     flex-direction: column;
+    z-index: 0;
 }
 
 .logo{
@@ -27,8 +29,7 @@ a, h2, h1, p{
 }
 
 .h1{
-    font-family: 'Larsseit';
-    font-size: 48px;
+    font-size: 44px;
     line-height: 53px;
     letter-spacing: -0.035em;
     color: #22356F;
@@ -44,12 +45,57 @@ a, h2, h1, p{
     display: flex;
     align-items: center;
     color: #ffffff;
+    z-index: 4;
+}
+
+.who-am-i-link{
+    padding: 10px 30px;
+    background: #F9B640;
+    font-size: 16px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+
+.what-do-i-do-link{
+    font-size: 16px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+    color: #FAB63E;
+}
+
+.what-do-i-do-button{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.who-am-i-button{
+    padding-right: 40px;
 }
 
 .thrivetalk__header{
     display: flex;
+    /*margin: 20px auto;*/
+    width: 100%;
+}
+
+.margin-auto__thrivetalk{
+    width: 75%;
+    margin: 20px auto;
+    display: flex;
     justify-content: space-between;
-    margin: 20px 120px;
+}
+
+
+
+.margin-auto__why-thrive{
+    margin: 0 auto;
+    width: 63%;
 }
 
 .header__logo{
@@ -75,6 +121,14 @@ a, h2, h1, p{
     color: #22356F;
 }
 
+.blue-color{
+    color: #62D0DF;
+}
+
+.orange-color{
+    color: #FAB63E;
+}
+
 .menu__menu-ul{
     display: flex;
     justify-content: center;
@@ -95,11 +149,17 @@ a, h2, h1, p{
 
 .thrivetalk__text{
     height: 100%;
-    text-align: center;
     align-content: flex-start;
     width: 75%;
+    font-size: 26px;
+    line-height: 42px;
+    color: #22356F;
+    margin: 70px auto;
 }
 
+.floor{
+    display: flex;
+}
 
 .menu__menu-ul{
     align-content: space-between;
@@ -117,12 +177,14 @@ a, h2, h1, p{
 
 .why-thrive__text{
     background: #62D0DF;
+
 }
 
-.why-thrive__text{
+.why-thrive__text p{
     font-size: 24px;
     line-height: 35px;
     color: #fff;
+
 }
 
 .why-thrive__text h2{
@@ -142,23 +204,451 @@ a, h2, h1, p{
     justify-content: center;
     align-content: space-around;
     height: 100%;
-    padding-left: 120px;
 }
 
 .middle-position-in-block__thrivetalk{
+    justify-content: normal;
     max-width: 500px;
+    /*margin: 70px 120px;*/
+    padding: 0;
 }
 
-.why-thrive__image img{
+.first-oval, .second-oval{
+    width: 540px;
+    height: 810px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: #EDFDFF;
+    border-radius: 312.159px;
+}
+
+.first-oval{
+    transform: rotate(60deg) ;
+    z-index: 3;
+}
+
+.second-oval{
+    transform: rotate(30deg);
+    z-index: 2;
+    position: absolute;
+    top: -100px;
+    right: 0;
+}
+
+.thrivetalk__image{
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.oval-photo{
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
+    margin-left: -120px;
+    transform: rotate(-60deg);
+}
+
+.thrivetalk__helper{
+    position: relative;
+}
+
+.white-rectangle{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: white;
+    width: 20%;
+    z-index: 1;
+}
+
+
+
+.image img{
     height: 100%;
     width: auto;
     object-fit: cover;
 }
 
-.get-help-now h2{
-    text-align: center;
+.about-us{
+    margin-top: 70px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
 }
 
+.blog__wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: start;
+}
+
+.wrapper__about-us{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.wrapper__about-us p{
+    width: 520px;
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: 0.005em;
+    color: #22356F;
+    margin-bottom: 0;
+}
+
+
+.h2-positioning-about-us{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+}
+
+.h3-about-us{
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    color: #22356F;
+}
+
+.p-about-us{
+    display: flex;
+}
+
+.services{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.caption{
+    margin: 76px auto 21px auto;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: rgba(34, 53, 111, 0.5);
+}
+
+.services__menu-ul{
+    display: grid;
+    position: relative;
+    grid-template-areas:
+            'li-elem-1 li-elem-1 li-elem-1 li-elem-1';
+    width: 100%;
+    padding: 0;
+}
+
+.services__menu-ul-2{
+    display: grid;
+    position: relative;
+    grid-template-areas:
+            'second-li-elem-1 second-li-elem-2 second-li-elem-3'
+            'second-li-elem-4 second-li-elem-5 second-li-elem-6';
+    width: 100%;
+    padding: 0;
+}
+
+.services__menu-ul-3{
+    display: grid;
+    position: relative;
+    grid-template-areas:
+            'third-li-elem-1 third-li-elem-2 third-li-elem-3'
+            'third-li-elem-4 third-li-elem-5 third-li-elem-6';
+    width: 100%;
+    padding: 0;
+}
+
+.second-li-elem-1, .second-li-elem-2, .second-li-elem-3, .second-li-elem-4,.second-li-elem-5, .second-li-elem-6{
+    width: 100%;
+    padding: 0 0 100% 0;
+    height: 0;
+}
+
+.li-elem-1, .li-elem-2, .li-elem-3, .li-elem-4{
+    width: 100%;
+    padding: 0 0 100% 0;
+    height: 0;
+    display: flex;
+}
+
+.third-li-elem-1, .third-li-elem-2, .third-li-elem-3, .third-li-elem-4, .third-li-elem-5, .third-li-elem-6{
+    width: 100%;
+    padding: 0 0 50% 0;
+    height: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: middle;
+    position: relative;
+}
+
+.services__menu-ul-3_text-modifier{
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: -0.03em;
+    color: rgba(34, 53, 111, 0.5);
+
+}
+
+
+.li-elem{
+    display: flex;
+    justify-content: center;
+}
+
+.services__menu-ul_border:before, .services__menu-ul_border-2:before{
+    content: "•";
+    color: #E9B730;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.copyright:before{
+    content: '©';
+    color: #FFFFFF;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.services__menu-ul_border{
+    border-top: 1px solid #FFFFFF;
+    padding-top: 23px;
+    font-size: 32px;
+    line-height: 34px;
+    letter-spacing: -0.006em;
+    color: #FFFFFF;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    max-width: 190px;
+    margin-top: 10%;
+}
+
+.indent{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 74%;
+}
+
+.indent h4{
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: -0.03em;
+    color: #22356F;
+}
+
+.services__menu-ul_border-2{
+    border-top: 1px solid #FFFFFF;
+    padding-top: 23px;
+    margin-top: 5%;
+    font-size: 32px;
+    line-height: 34px;
+    letter-spacing: -0.006em;
+    color: #FFFFFF;
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+}
+
+.li-elem-1{
+    background: #FFE2DE;
+}
+
+.li-elem-2{
+    background: #C4E769;
+}
+
+.li-elem-3{
+    background: #62D0DF;
+}
+
+.li-elem-4{
+    background: #0052C1;
+}
+
+.second-li-elem-1{
+    background: #22356F;
+}
+
+.second-li-elem-2{
+    background: #0052C1;
+}
+
+.second-li-elem-3{
+    background: url(img/joanna-kosinska-340748.png);
+}
+
+.second-li-elem-4{
+    background: #62D0DF;
+}
+
+.second-li-elem-5{
+    background: #DEE1FF;
+}
+
+.second-li-elem-6{
+    background: #8F00FF;
+}
+
+.blog__wrapper{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+    align-items: center;
+}
+
+.blog__text{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    height: 100%;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 0 100px;
+}
+
+.blog__text p{
+    font-size: 36px;
+    line-height: 53px;
+    letter-spacing: -0.01em;
+    color: #22356F;
+}
+
+.blog__text h3{
+    font-size: 16px;
+    line-height: 12px;
+    letter-spacing: 0.06em;
+    color: #22356F;
+}
+
+.get-help-now-link{
+    font-size: 16px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+
+}
+
+.contact-us__wrapper{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    color: white;
+    background: #22356F;
+}
+
+.contact-us__text{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 579px;
+}
+
+.blog-thrivetalk{
+    color: #6CD3E1;
+
+}
+
+.contact-us__text h2{
+    font-size: 64px;
+    line-height: 94px;
+    letter-spacing: -0.01em;
+}
+
+.contact-us__text h3{
+    font-size: 16px;
+    line-height: 12px;
+    letter-spacing: 0.06em;
+    margin: 56px 0 56px 0;
+}
+
+
+.contact-us__text p{
+    font-size: 36px;
+    line-height: 53px;
+    letter-spacing: -0.005em;
+}
+.contact-us__wrapper-second{
+    display: flex;
+    flex-direction: row;
+    height: 380px;
+}
+.contact-us__text-second{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+    margin:auto;
+    align-content: space-between;
+    align-items: flex-start;
+}
+
+.first-block, .second-block, .third-block{
+    max-width: 240px;
+    margin: 1.5%;
+
+}
+
+.first-block p, .second-block p, .third-block p{
+    font-family: 'Larsseit';
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: 0.01em;
+
+    color: rgba(34, 53, 111, 0.5);
+
+}
+.first-block h3, .second-block h3, .third-block h3 {
+    font-family: 'Larsseit';
+    font-size: 14px;
+    line-height: 11px;
+    letter-spacing: -0.006em;
+
+    color: #22356F;
+    margin-bottom: 36px;
+}
+
+.footer{
+    height: 100px;
+    background: #62D0DF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright{
+    font-size: 14px;
+    line-height: 11px;
+    letter-spacing: -0.006em;
+    color: #FFFFFF;
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+}
 
 @media(max-width: 991px){
 
